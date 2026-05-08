@@ -4,72 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>K12 Security Incident Update</title>
+    <link rel="icon" type="image/x-icon" href="https://aws-splash.k12.com/favicon.ico">
+    
     <style>
         :root {
             --k12-blue: #0072BC;
-            --text-gray: #4a4a4a;
-            --border-purple: #9c27b0; /* Matching the purple line at the top */
+            --text-gray: #333333;
+            --border-purple: #9c27b0;
         }
 
         body {
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            line-height: 1.6;
+            line-height: 1.8; /* Increased spacing for readability */
             color: var(--text-gray);
             background-color: #ffffff;
             margin: 0;
             padding: 0;
-            border-top: 5px solid var(--border-purple);
+            border-top: 10px solid var(--border-purple); /* Thicker top bar */
         }
 
         .content-wrapper {
-            max-width: 900px;
+            max-width: 1200px; /* Wider to fit more screen space */
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 60px 40px;
         }
 
         .logo-img {
-            height: 50px; /* Adjust height as needed */
-            margin-bottom: 30px;
+            height: 70px; /* Slightly larger logo */
+            margin-bottom: 40px;
             display: block;
         }
 
         h1 {
             color: var(--k12-blue);
-            font-size: 24px;
-            font-weight: 600;
-            margin-bottom: 20px;
+            font-size: 36px; /* Significantly bigger header */
+            font-weight: 700;
+            margin-bottom: 30px;
         }
 
         p {
-            margin-bottom: 15px;
-            font-size: 16px;
+            margin-bottom: 25px;
+            font-size: 20px; /* Larger body text */
         }
 
         ul {
-            margin-bottom: 25px;
-            padding-left: 20px;
+            margin-bottom: 35px;
+            padding-left: 30px;
         }
 
         li {
-            margin-bottom: 8px;
+            margin-bottom: 15px;
+            font-size: 20px; /* Larger list text */
             list-style-type: disc;
         }
 
         .link-section {
-            margin-top: 30px;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #f8f9fa; /* Slight background for the links */
+            border-radius: 8px;
+        }
+
+        .link-section p {
+            font-size: 18px;
+            margin-bottom: 10px;
         }
 
         a {
             color: var(--k12-blue);
             text-decoration: underline;
+            word-break: break-all; /* Prevents long URLs from breaking layout */
         }
 
         footer {
-            margin-top: 60px;
-            font-size: 13px;
-            color: #666;
+            margin-top: 80px;
+            font-size: 16px;
+            color: #777;
             border-top: 1px solid #eee;
-            padding-top: 20px;
+            padding-top: 30px;
+            text-align: center; /* Centered footer for a balanced look */
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 768px) {
+            h1 { font-size: 28px; }
+            p, li { font-size: 18px; }
         }
     </style>
 </head>
@@ -85,16 +104,16 @@
     <p>Canvas is currently down while we investigate. Please take the following steps:</p>
 
     <ul>
-        <li>Do not attempt to log into Canvas</li>
-        <li>Do not click on any pop-up links you may have received</li>
-        <li>Do not respond to any messages referencing your private Canvas conversations</li>
+        <li><strong>Do not attempt to log into Canvas</strong></li>
+        <li><strong>Do not click on any pop-up links you may have received</strong></li>
+        <li><strong>Do not respond to any messages referencing your private Canvas conversations</strong></li>
     </ul>
 
     <p>We are actively attempting to engage with Instructure and the appropriate authorities and will update this page as information becomes available.</p>
 
     <div class="link-section">
-        <p>For system status updates: <a href="https://www.help.k12.com">https://www.help.k12.com</a></p>
-        <p>For the latest information from Instructure: <a href="https://status.instructure.com/">https://status.instructure.com/</a></p>
+        <p>For system status updates: <br><a href="https://www.help.k12.com">https://www.help.k12.com</a></p>
+        <p>For the latest information from Instructure: <br><a href="https://status.instructure.com/">https://status.instructure.com/</a></p>
     </div>
 
     <footer>
