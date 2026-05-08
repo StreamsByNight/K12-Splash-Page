@@ -5,92 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>K12 Security Incident Update</title>
     <link rel="icon" type="image/x-icon" href="https://aws-splash.k12.com/favicon.ico">
-    
     <style>
         :root {
             --k12-blue: #0072BC;
-            --text-gray: #333333;
-            --border-purple: #9c27b0;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        html, body {
-            height: 100%;
-            margin: 0;
-            overflow: hidden; /* This prevents the scrollbar from appearing */
+            --text-main: #4a4a4a;
+            --purple-line: #914669; /* Matches the top accent line */
         }
 
         body {
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            color: var(--text-gray);
+            margin: 0;
+            padding: 0;
             background-color: #ffffff;
-            border-top: 8px solid var(--border-purple);
-            display: flex;
-            flex-direction: column;
-            justify-content: center; /* Centers the content vertically */
-            align-items: center;
+            color: var(--text-main);
+            border-top: 6px solid var(--purple-line);
+            -webkit-font-smoothing: antialiased;
         }
 
-        .content-wrapper {
-            max-width: 1000px;
-            width: 90%;
-            height: 95vh; /* Sets height to 95% of the viewport */
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between; /* Spreads content evenly */
-            padding: 20px 0;
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 60px;
         }
 
-        .logo-img {
-            height: 8vh; /* Logo size scales with screen height */
-            min-height: 40px;
-            width: auto;
-            align-self: flex-start;
+        .logo {
+            width: 130px;
+            margin-bottom: 40px;
         }
 
         h1 {
             color: var(--k12-blue);
-            font-size: clamp(1.5rem, 4vh, 2.5rem); /* Text shrinks/grows with height */
-            font-weight: 700;
-            margin: 10px 0;
-        }
-
-        .main-text {
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            font-size: 28px;
+            font-weight: 500; /* Medium weight for that clean look */
+            margin-bottom: 25px;
+            letter-spacing: -0.5px;
         }
 
         p {
-            font-size: clamp(1rem, 2.2vh, 1.25rem);
-            margin-bottom: 1.5vh;
+            font-size: 19px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            font-weight: 300; /* Light weight to match the image text style */
+        }
+
+        .sub-header {
+            margin-top: 30px;
         }
 
         ul {
-            margin-bottom: 2vh;
-            padding-left: 30px;
+            list-style-type: none;
+            padding-left: 20px;
+            margin-bottom: 30px;
         }
 
         li {
-            font-size: clamp(1rem, 2.2vh, 1.25rem);
-            margin-bottom: 0.5vh;
+            font-size: 18px;
+            margin-bottom: 12px;
+            position: relative;
+            font-weight: 300;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--text-main);
             font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
         }
 
-        .link-section {
-            background-color: #f8f9fa;
-            padding: 15px;
-            border-radius: 8px;
-            border-left: 4px solid var(--k12-blue);
+        .links {
+            margin-top: 40px;
         }
 
-        .link-section p {
-            font-size: 0.9rem;
-            margin: 5px 0;
+        .links p {
+            font-size: 18px;
+            margin-bottom: 15px;
         }
 
         a {
@@ -99,42 +89,39 @@
         }
 
         footer {
-            font-size: 0.8rem;
-            color: #777;
-            padding-top: 10px;
-            border-top: 1px solid #eee;
-            text-align: center;
+            margin-top: 80px;
+            font-size: 13px;
+            color: #888;
+            font-weight: 300;
         }
     </style>
 </head>
 <body>
 
-<div class="content-wrapper">
-    <img src="https://aws-splash.k12.com/k12_logo.png" alt="K12 Logo" class="logo-img">
+<div class="container">
+    <img src="https://aws-splash.k12.com/k12_logo.png" alt="K12 Logo" class="logo">
 
-    <div class="main-text">
-        <h1>Instructure Security Incident — Update</h1>
+    <h1>Instructure Security Incident — Information for Our School Community</h1>
 
-        <p>We are aware of the cybersecurity incident affecting Instructure, the provider of our Canvas platform. <strong>Canvas is currently down.</strong></p>
+    <p>We are aware of the cybersecurity incident affecting Instructure, the education technology company that provides Canvas, the learning management platform our school uses. This is an Instructure incident.</p>
 
-        <p>Please follow these safety protocols:</p>
+    <p class="sub-header">Canvas is currently down while we investigate. Please take the following steps:</p>
 
-        <ul>
-            <li>Do not attempt to log into Canvas</li>
-            <li>Do not click on any suspicious pop-up links</li>
-            <li>Do not respond to messages about private Canvas conversations</li>
-        </ul>
+    <ul>
+        <li>Do not attempt to log into Canvas</li>
+        <li>Do not click on any pop-up links you may have received</li>
+        <li>Do not respond to any messages referencing your private Canvas conversations</li>
+    </ul>
 
-        <p>We are working with authorities and will provide updates as they become available.</p>
+    <p>We are actively attempting to engage with Instructure and the appropriate authorities and will update this page as information becomes available.</p>
 
-        <div class="link-section">
-            <p><strong>System Status:</strong> <a href="https://www.help.k12.com">www.help.k12.com</a></p>
-            <p><strong>Instructure Updates:</strong> <a href="https://status.instructure.com/">status.instructure.com</a></p>
-        </div>
+    <div class="links">
+        <p>For system status updates: <a href="https://www.help.k12.com">https://www.help.k12.com</a></p>
+        <p>For the latest information from Instructure: <a href="https://status.instructure.com/">https://status.instructure.com/</a></p>
     </div>
 
     <footer>
-        Copyright © 2026 K12, Inc. All rights reserved.
+        Copyright © 2026 K12, Inc. All rights reserved. K12, as registered in the U.S. Patent and Trademark Office.
     </footer>
 </div>
 
