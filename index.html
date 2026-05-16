@@ -3,133 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>K12 Maintenance</title>
-    <link rel="icon" type="image/x-icon" href="https://aws-splash.k12.com/favicon.ico">
-    
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700" rel="stylesheet">
+    <link rel="shortcut icon" href="https://aws-splash.k12.com/favicon.ico" type="image/x-icon">
     <style>
-        :root {
-            --k12-blue: #0072BC;
-            --text-main: #4a4a4a;
-            --purple-line: #914669; /* Matches the top accent line from image */
+        *,*:after,*:before{
+            -webkit-box-sizing:border-box;
+            box-sizing:border-box;
+            -webkit-font-smoothing:antialiased;
+            font-smoothing:antialiased;
+            text-rendering:optimizeLegibility
         }
-
-        body {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-            color: var(--text-main);
-            border-top: 6px solid var(--purple-line);
-            -webkit-font-smoothing: antialiased;
-            display: flex;
-            justify-content: center;
+        html{
+            width:100%;
+            height:100%;
+            padding:0
         }
-
-        .container {
-            max-width: 1300px; /* Increased to fill more of the screen width */
+        /* Top Purple Accent Line to match the screenshot */
+        .purple-bar {
             width: 100%;
-            padding: 60px 80px;
-            box-sizing: border-box;
+            height: 6px;
+            background-color: #914669;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
-
-        .logo {
-            width: 150px; /* Slightly larger logo */
-            margin-bottom: 50px;
+        .container {
+            display:block;
+            padding:30px;
+            margin:0 auto;
+            margin-top: 6px; /* Offset for the purple bar */
         }
-
-        h1 {
-            color: var(--k12-blue);
-            font-size: 32px; /* Increased for better screen fill */
-            font-weight: 500;
-            margin-bottom: 30px;
-            letter-spacing: -0.5px;
+        @media (min-width: 1280px){
+            .container{padding:120px}
         }
-
-        p {
-            font-size: 21px; /* Increased text size */
-            line-height: 1.6;
-            margin-bottom: 25px;
-            font-weight: 300;
+        body{
+            margin:0;
+            font-family:"Quattrocento Sans",sans-serif !important;
+            font-size:1rem;
+            color:#444343;
+            width:100%;
+            height:100%
         }
-
-        .sub-header {
-            margin-top: 35px;
+        h1{
+            color:#015f82;
+            font-size:38px;
+            font-weight:700
         }
-
-        ul {
-            list-style-type: none;
-            padding-left: 20px;
-            margin-bottom: 35px;
+        .logo{
+            margin-bottom:20px
         }
-
-        li {
-            font-size: 20px; /* Increased list size */
-            margin-bottom: 15px;
-            position: relative;
-            font-weight: 300;
+        p{
+            font-size:24px;
+            line-height:30px;
+            margin:0 0 15px;
+            max-width:100%
         }
-
-        li::before {
-            content: "•";
-            color: var(--text-main);
-            font-weight: bold;
-            display: inline-block;
-            width: 1em;
-            margin-left: -1em;
+        @media (min-width: 1024px){
+            p{font-size:28px;line-height:34px}
         }
-
-        .links {
-            margin-top: 50px;
+        footer{
+            padding:30px 0;
+            margin-top:30px;
+            width:100%
         }
-
-        .links p {
-            font-size: 20px;
-            margin-bottom: 18px;
-        }
-
-        a {
-            color: var(--k12-blue);
-            text-decoration: underline;
-        }
-
-        footer {
-            margin-top: 100px;
-            font-size: 14px;
-            color: #888;
-            font-weight: 300;
-            border-top: 1px solid #eee;
-            padding-top: 20px;
+        footer>*{
+            font-size:18px;
+            line-height:24px
         }
     </style>
 </head>
 <body>
+    <div class="purple-bar"></div>
 
-<div class="container">
-    <img src="https://aws-splash.k12.com/k12_logo.png" alt="K12 Logo" class="logo">
-
-    <h1>Instructure Security Incident — Information for Our School Community</h1>
-
-    <p>We are aware of the cybersecurity incident affecting Instructure, the education technology company that provides Canvas, the learning management platform our school uses. This is an Instructure incident.</p>
-
-    <p class="sub-header">Canvas is currently down while we investigate. Please take the following steps:</p>
-
-    <ul>
-        <li>Do not attempt to log into Canvas</li>
-        <li>Do not click on any pop-up links you may have received</li>
-        <li>Do not respond to any messages referencing your private Canvas conversations</li>
-    </ul>
-
-    <p>We are actively attempting to engage with Instructure and the appropriate authorities and will update this page as information becomes available.</p>
-
-    <div class="links">
-        <p>For system status updates: <a href="https://www.help.k12.com">https://www.help.k12.com</a></p>
-        <p>For the latest information from Instructure: <a href="https://status.instructure.com/">https://status.instructure.com/</a></p>
+    <div class="container">
+        <img class="logo" src="https://aws-splash.k12.com/k12_logo.png" width="143" alt="K12 Logo">
+        
+        <h1>Instructure Security Incident &mdash; Information for Our School Community</h1>
+        
+        <p>We are aware of the cybersecurity incident affecting Instructure, the education technology company that provides Canvas, the learning management platform our school uses. This is an Instructure incident.</p>
+        
+        <p>Canvas is currently down while we investigate. Please take the following steps:</p>
+        
+        <ul style="font-size:24px;line-height:34px;margin:0 0 20px;padding-left:30px;max-width:100%;">
+            <li>Do not attempt to log into Canvas</li>
+            <li>Do not click on any pop-up links you may have received</li>
+            <li>Do not respond to any messages referencing your private Canvas conversations</li>
+        </ul>
+        
+        <p>We are actively attempting to engage with Instructure and the appropriate authorities and will update this page as information becomes available.</p>
+        
+        <p>For system status updates: <a href="https://www.help.k12.com" style="color:#015f82;">https://www.help.k12.com</a></p>
+        
+        <p>For the latest information from Instructure: <a href="https://status.instructure.com/" style="color:#015f82;">https://status.instructure.com/</a></p>
+        
+        <footer>
+            <p class="copyright">Copyright &copy; <span class="current-year"></span> K12, Inc. All rights reserved. K12, as registered in the U.S. Patent and Trademark Office.</p>
+        </footer>
     </div>
 
-    <footer>
-        Copyright © 2026 K12, Inc. All rights reserved. K12, as registered in the U.S. Patent and Trademark Office.
-    </footer>
-</div>
-
+    <script>
+        // Update the title to reflect the current year dynamically
+        const current_year = new Date().getFullYear();
+        const current_year_title = document.querySelector(".current-year");
+        current_year_title.innerHTML = current_year;
+    </script>
 </body>
 </html>
